@@ -34,7 +34,7 @@ jobs:
     - name: Dry-run Build
       run: |
         python -m build
-                
+        
   validate-release-version:
     name: Validate Release Version in CHANGELOG
     runs-on: ubuntu-latest
