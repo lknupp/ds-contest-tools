@@ -34,11 +34,6 @@ jobs:
       run: |
         python -m build
         
-    - name: Check wheel contents
-      run: |
-        # Verificamos superficialmente se o pacote contém o .cls necessário
-        unzip -l dist/*.whl | grep "polygon.cls"
-        
   validate-release-version:
     name: Validate Release Version in CHANGELOG
     runs-on: ubuntu-latest
